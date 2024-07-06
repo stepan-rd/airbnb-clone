@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      filter: {
+        'white-filter': 'brightness(0) invert(1)',
+        'none-filter': 'none',
+      }
+    },
   },
   plugins: [],
 }
