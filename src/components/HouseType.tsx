@@ -12,7 +12,7 @@ export function HouseType({ house, isHovered, isActive, index }: Props) {
 
   return (
     <div
-      className={`flex flex-col items-center justify-center mr-5 text-sm border border-b-2 border-transparent  hover:cursor-pointer whitespace-nowrap ${isActive ? "border-b-black" : "hover:border-b-stone-300"} `}
+      className={`flex flex-col items-center justify-center mr-5 text-sm border border-b-2 border-transparent  hover:cursor-pointer pb-1 whitespace-nowrap ${isActive ? "border-b-black" : "hover:border-b-stone-300"} `}
       onMouseEnter={() => setHoveredIndex(index)}
       onMouseLeave={() => setHoveredIndex(null)}
       onClick={() => setActiveIndex(index)}
@@ -24,7 +24,7 @@ export function HouseType({ house, isHovered, isActive, index }: Props) {
       />
 
       <h1
-        className={`text-stone-500 transition-all ${isActive && "text-black"} ${isHovered && "text-black"} 
+        className={` hover:text-black transition-all ${isActive ? "text-black" : "text-stone-500"}
     `}
       >
         {house.name}
