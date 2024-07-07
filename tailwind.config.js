@@ -9,6 +9,10 @@ export default {
       filter: {
         'white-filter': 'brightness(0) invert(1)',
         'none-filter': 'none',
+      },
+
+      fontFamily: {
+        "SF-pro": ["SF pro"]
       }
     },
   },
