@@ -40,7 +40,7 @@ export function HouseTypes({}: Props) {
 
   return (
     <div
-      className="relative px-5 mt-2 ml-5 overflow-hidden h-14"
+      className="relative px-5 mt-5 ml-5 overflow-hidden h-14"
       ref={houseTypesContainerRef}
     >
       <div
