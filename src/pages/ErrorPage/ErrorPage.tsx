@@ -9,7 +9,7 @@ export function ErrorPage({}: Props) {
 
   return (
     <div className="flex flex-col p-10">
-      <div className="flex">
+      <div className="flex mb-4">
         <img src={rbnbLogoSmall} width="32" alt="" />
         <h1 className="ml-4 text-3xl font-SF-pro">404 Page not found.</h1>
       </div>
