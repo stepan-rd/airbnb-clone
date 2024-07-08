@@ -3,9 +3,12 @@ import { create } from "zustand";
 
 type HomePageStoreType = {
   allRbnbs: RbnbType[];
-  setAllRbnbs: (val: RbnbType[]) => void;
+  setAllRbnbs: (val: RbnbType[] | ((prev: RbnbType[]) => RbnbType[])) => void;
 };
 export const useHomePage = create<HomePageStoreType>((set) => ({
   allRbnbs: [],
-  setAllRbnbs: (val) => set(() => ({ allRbnbs: val })),
+  setAllRbnbs: (val) =>
+    set((state) => ({
+      allRbnbs: typeof val === "function" ? val(state.allRbnbs) : val,
+    })),
 }));
