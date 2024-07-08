@@ -7,15 +7,15 @@ export function FilterSelection({}: Props) {
 
   return (
     <div className="relative flex text-sm leading-4 border rounded-full shadow-md border-stone-400 whitespace-nowrap">
-      <div className="py-2 pl-5 pr-20 rounded-l-full hover:bg-stone-100 hover:cursor-pointer">
+      <div className="py-2 pl-5 pr-16 rounded-l-full hover:bg-stone-100 hover:cursor-pointer">
         <h1 className="font-semibold">Where</h1>
         <h1 className="text-stone-500">Search Destinations</h1>
       </div>
-      <div className="py-2 pl-5 pr-20 border-l border-stone-400 hover:bg-stone-100 hover:cursor-pointer">
+      <div className="py-2 pl-5 pr-16 border-l border-stone-400 hover:bg-stone-100 hover:cursor-pointer">
         <h1 className="font-semibold">Rooms</h1>
         <h1 className="text-stone-500">Search by room count</h1>
       </div>
-      <div className="py-2 pl-5 pr-20 border-l rounded-r-full border-x-stone-400 hover:bg-stone-100 hover:cursor-pointer">
+      <div className="py-2 pl-5 border-l rounded-r-full pr-14 border-x-stone-400 hover:bg-stone-100 hover:cursor-pointer">
         <h1 className="font-semibold">Who</h1>
         <h1 className="text-stone-500">Add Quests</h1>
       </div>
