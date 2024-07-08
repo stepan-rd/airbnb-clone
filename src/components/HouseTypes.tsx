@@ -22,14 +22,12 @@ export function HouseTypes({}: Props) {
 
   useEffect(() => {
     if (houseTypesContainerRef.current) {
-      console.log(houseTypesContainerRef.current.offsetWidth);
       setCurrScreenWidth(houseTypesContainerRef.current.offsetWidth);
     }
   }, [houseTypesContainerRef.current?.offsetWidth]);
 
   useEffect(() => {
     if (houseTypesWrapperRef.current) {
-      console.log(houseTypesWrapperRef.current.offsetWidth);
       setHouseTypesContainerWidth(houseTypesWrapperRef.current.offsetWidth);
     }
   }, [houseTypesWrapperRef.current?.offsetWidth])
