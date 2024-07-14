@@ -17,6 +17,10 @@ export function generateRandomRbnbs(amount: number): RbnbType[] {
         bedCont: Math.random() * 10,
         bathrooms: Math.random() * 4,
       },
+      maxDays: Math.random() * 3 + 4,
+      questsLimit: Math.random() * 8 + 2,
+      infantLimit: Math.random() * 5 + 2,
+      petLimit: Math.random() * 10,
     });
   }
 
