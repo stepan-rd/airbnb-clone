@@ -23,7 +23,7 @@ export function PriceCalc({}: Props) {
 
   return (
     <div
-      className={`absolute right-0 w-4/12 font-semibold border p-4 rounded-lg shadow-md ${theme.borderColor}`}
+      className={`ml-auto w-4/12 font-semibold border p-4 rounded-lg shadow-md ${theme.borderColor}`}
     >
       <h1 className="mb-4 font-normal">
         <span className="text-xl font-semibold">

@@ -7,7 +7,7 @@ export function PictureGridLgDisplay({}: Props) {
     useRbnbDetailsPage();
 
   return (
-    <div className="relative flex justify-center w-full max-h-32.188rem max-w-63.75rem">
+    <div className="mx-auto relative flex justify-center w-full max-h-32.188rem max-w-63.75rem">
       <img
         className="w-full mr-2 rounded-l-xl min-w-80 min-h-80"
         src="https://placehold.co/320x320?text=Placeholder"

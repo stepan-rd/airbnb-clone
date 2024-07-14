@@ -13,7 +13,7 @@ type ThemeStoreType = {
 };
 export const useThemeStore = create<ThemeStoreType>((set) => ({
   theme: {
-    textMain: "text-black",
+    textMain: "text-stone-800",
     textSecondary: "text-stone-500",
     iconicColor: "#e81948",
     borderColor: "border-stone-400"
