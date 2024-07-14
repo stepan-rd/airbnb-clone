@@ -2,6 +2,8 @@ import { useHomePage } from "@/state/HomePageStore";
 import { generateRandomRbnbs } from "@/utils/generateRandomRbnbs";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { RbnbCard } from "./RbnbCard";
+import { Header } from "@/components/Header";
+import { HouseTypes } from "@/components/HouseTypes";
 
 type Props = {};
 
@@ -54,22 +56,25 @@ export function HomePage({}: Props) {
   }, [allRbnbs, setAllRbnbs]);
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="flex flex-wrap justify-center">
-        {allRbnbs.map((rbnb, rbnbIndex) => {
-          const lastElement = rbnbIndex === allRbnbs.length - 1;
+    <>
+      <HouseTypes />
+      <div className="flex flex-col items-center mt-40">
+        <div className="flex flex-wrap justify-center">
+          {allRbnbs.map((rbnb, rbnbIndex) => {
+            const lastElement = rbnbIndex === allRbnbs.length - 1;
 
-          return (
-            <MemoRbnbCard
-              key={rbnbIndex}
-              ref={lastElement ? lastElementRef : null}
-              rbnbDetails={rbnb}
-              rbnbIndex={rbnbIndex}
-            />
-          );
-        })}
+            return (
+              <MemoRbnbCard
+                key={rbnbIndex}
+                ref={lastElement ? lastElementRef : null}
+                rbnbDetails={rbnb}
+                rbnbIndex={rbnbIndex}
+              />
+            );
+          })}
+        </div>
+        {loadingNewCards && <h1 className="text-xl font-bold">loading...</h1>}
       </div>
-      {loadingNewCards && <h1 className="text-xl font-bold">loading...</h1>}
-    </div>
+    </>
   );
 }
