@@ -39,7 +39,8 @@ export function PictureGridLgDisplay({}: Props) {
         />
       </div>
       <button
-        className="absolute flex px-2 py-1 transition-all bg-white border border-black rounded-lg top-85% right-10 hover:scale-102 active:scale-100 whitespace-nowrap"
+        className="absolute flex px-2 py-1 transition-all bg-white border border-black rounded-lg right-10 hover:scale-102 active:scale-100 whitespace-nowrap"
+        style={{top: "85%"}}
         onClick={() => setMorePicturesDisplaying(true)}
       >
         <svg
