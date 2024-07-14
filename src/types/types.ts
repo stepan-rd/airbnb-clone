@@ -6,4 +6,8 @@ export type RbnbType = {
   stars: number;
   location: string;
   rooms: { questCount: number; bedrooms: number; bedCont: number; bathrooms: number };
+  maxDays: number;
+  questsLimit: number;
+  infantLimit: number;
+  petLimit: number;
 };
