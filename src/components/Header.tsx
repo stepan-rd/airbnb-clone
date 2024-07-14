@@ -1,7 +1,6 @@
 import rbnbSvg from "@/assets/airbnb.svg";
 import rbnbSvgSmall from "@/assets/airbnb-small.svg";
 import { FilterSelection } from "./FilterSelection";
-import { HouseTypes } from "./HouseTypes";
 import { useNavigate } from "react-router-dom";
 import { FilterSelectionMedium } from "./FilterSelectionMedium";
 
@@ -12,7 +11,7 @@ export function Header({}: Props) {
 
   return (
     <>
-      <div className="flex p-4">
+      <div className="fixed z-10 flex w-full p-4 bg-white border-b shadow-sm border-b- stone-200">
         <div
           className="flex items-center flex-shrink-0 hover:cursor-pointer"
           onClick={() => navigate("/")}
@@ -28,9 +27,6 @@ export function Header({}: Props) {
         </div>
       </div>
       <hr />
-      <div>
-        <HouseTypes />
-      </div>
     </>
   );
 }
