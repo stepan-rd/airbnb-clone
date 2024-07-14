@@ -17,3 +17,8 @@
   filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(229deg)
     brightness(105%) contrast(102%);
 }
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
